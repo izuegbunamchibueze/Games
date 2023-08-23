@@ -11,10 +11,15 @@ for (let button of buttons) {
         if(lastValue === "o"){
             button.textContent= "x"
             lastValue = "x";
-            display.textContent
+            display.textContent = "player 2's turn to play";
+        } else {
+          button.textContent = "o";
+          lastValue = "o";
+          display.textContent = "player 1's turn to play";
+          checkStatus();
         }
      });
 }
 
-
+let restartButton = document.getElementById("")
 
