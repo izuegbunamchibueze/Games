@@ -50,6 +50,9 @@ function disableButtonsWhenGameIsWon(player){
 
 function checkDraw() {
     for(let button of buttons) {
-        if (button.textContent = "It is a Draw Game")
+        if (button.textContent === "") {
+            return;
+        }
     }
+    display.textContent = "It is a Draw Game";
 }

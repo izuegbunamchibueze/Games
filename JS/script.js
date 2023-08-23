@@ -21,5 +21,9 @@ for (let button of buttons) {
      });
 }
 
-let restartButton = document.getElementById("")
+let restartButton = document.getElementById("controllBtn");
+
+restartButton.addEventListener("click", () => {
+  window.Location.href = "index.html";
+});
 
